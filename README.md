@@ -11,7 +11,7 @@ consuming code refers to the code via a pom.xml entry:
     <groupId>com.dhenton9000.webjars</groupId>
     <artifactId>webjar-app</artifactId>
     <version>1.0-SNAPSHOT</version>
- </dependency>
+</dependency>
 ```
 
 js reference in html

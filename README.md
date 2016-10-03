@@ -4,7 +4,8 @@
 This application is demo react app packaged as a webjar.
 
 
-consuming code 
+consuming code refers to the code via a pom.xml entry:
+
 ```xml
 <dependency>
     <groupId>com.dhenton9000.webjars</groupId>
@@ -17,3 +18,5 @@ js reference in html
 ```
 <script src="/webjars/jsapp/main_app.min.js"  type="text/javascript"></script>  
 ```
+
+The webserver must be configured to serve resources off the classpath

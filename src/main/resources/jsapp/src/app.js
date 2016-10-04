@@ -19,7 +19,7 @@ if (loadedStates.indexOf(document.readyState) > -1 && document.body) {
 function run() {
 
     ReactDOM.render(
-      <Hello name="World" />,
+      <Hello name="Worldsss" />,
       document.getElementById('container')
     );
 }

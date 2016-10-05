@@ -52,7 +52,8 @@ var srcDir = mainApp.sourceBase +"src/";
 var SASS_FILES = srcDir + '/sass/**/*.scss';
 var WATCH_JS = [srcDir +'/react/**/*.js',srcDir+'/app.js'];
 var HTML_FILES = [mainApp.sourceBase+"public_html/index.html"];
-
+var cssAssetsLocation = mainApp.sourceBase +"css/**/*";
+var imagesLocation = mainApp.sourceBase +"user_images/**/*";
 
 //argv.dir is full path to target folder
 mainApp.targetWebappFolder = argv.dir + mainApp.treeLocation;
@@ -90,9 +91,22 @@ gulp.task('sass-main-app', function () {
             .pipe(concat('main_app_style.css'))
             .pipe(gulp.dest(mainApp.targetWebappFolder));
 });
+gulp.task('copy-css-assets', function () {
+    gulp.src(cssAssetsLocation)
+             
+             
+            .pipe(gulp.dest(mainApp.targetWebappFolder));
+});
+
+gulp.task('copy-images', function () {
+    gulp.src(imagesLocation)
+             
+             
+            .pipe(gulp.dest(mainApp.targetWebappFolder+"images/user_images"));
+});
 
 
-gulp.task('default', ['build-main-app', 'sass-main-app']);
+gulp.task('default', ['build-main-app', 'sass-main-app','copy-css-assets','copy-images']);
 
 ///////////////////development////////////////////////////
 

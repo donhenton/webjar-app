@@ -1,8 +1,9 @@
 # Webjar-app
 
 
-This application is demo react app packaged as a webjar.
-
+This application is demo react app packaged as a webjar. It also demonstrates
+distributing css/image resources. See the demo page of 
+https://github.com/donhenton/spring-boot-birt for examples of how to use.
 
 consuming code 
 

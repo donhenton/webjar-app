@@ -21,3 +21,18 @@ js reference in html
 ```
 
 The webserver must be configured to serve resources off the classpath
+
+## How Development Works
+
+* gulp dev task allows for the typical livereload SPA development environment.
+* gulp default is called via mvn clean install which will place all assets in the appropriate META-INF folder. This is set in the pom.xml file.
+
+### package assets
+```
+mvn clean install
+```
+
+### development
+```
+gulp dev
+```

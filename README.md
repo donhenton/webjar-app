@@ -31,6 +31,7 @@ The webserver must be configured to serve resources off the classpath
 ```
 mvn clean install
 ```
+This command calls the gulp default task which will compile js assets and copy them to the directory specified in the pom file as part of the package step.
 
 ### development
 ```

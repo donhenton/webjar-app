@@ -70,5 +70,14 @@
         
         
     </build>
-    
+    <distributionManagement>
+  <repository>
+    <id>local-repo</id>
+    <url>http://localhost:9081/repository/maven-releases</url>
+  </repository>
+  <snapshotRepository>
+    <id>local-repo</id>
+    <url>http://localhost:9081/repository/maven-snapshots</url>
+  </snapshotRepository>
+</distributionManagement>
 </project>

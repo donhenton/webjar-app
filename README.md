@@ -3,7 +3,8 @@
 
 This application is demo react app packaged as a webjar. It also demonstrates
 distributing css/image resources. See the demo page of 
-https://github.com/donhenton/spring-boot-birt for examples of how to use.
+https://github.com/donhenton/spring-boot-birt for examples of how to use. Since this jar file is
+not on maven central or webjar central, you will have to install it locally.
 
 consuming code refers to the code via a pom.xml entry:
 

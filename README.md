@@ -28,6 +28,7 @@ The webserver must be configured to serve resources off the classpath
 
 * gulp dev task allows for the typical livereload SPA development environment.
 * gulp default is called via mvn clean install which will place all assets in the appropriate META-INF folder. This is set in the pom.xml file.
+* node version is 6.11.1
 
 ### package assets
 
@@ -75,3 +76,30 @@ gulp dev
 ```
 
 * run ```mvn deploy```
+
+
+## Configure Github as a Repository
+
+<https://stackoverflow.com/questions/14013644/hosting-a-maven-repository-on-github>
+* do the part that creates the mvn-repo in target
+* push branch
+* use of the second plugin fails, so no push automatically
+
+## Github use reference
+
+```
+
+<repositories>
+    <repository>
+        <id>YOUR-PROJECT-NAME-mvn-repo</id>
+        <url>https://raw.github.com/YOUR-USERNAME/YOUR-PROJECT-NAME/mvn-repo/</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+    </repository>
+</repositories>
+
+
+```
+

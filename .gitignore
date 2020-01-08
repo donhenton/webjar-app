@@ -3,3 +3,5 @@
 /src/main/resources/jsapp/public_html/build/css/style.css
 /target
 .DS_Store
+/package-lock.json
+/undefined/

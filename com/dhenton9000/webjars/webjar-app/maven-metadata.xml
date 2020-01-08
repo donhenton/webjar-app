@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.dhenton9000.webjars</groupId>
+  <artifactId>webjar-app</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20200108133112</lastUpdated>
+  </versioning>
+</metadata>

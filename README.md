@@ -91,8 +91,8 @@ gulp dev
 
 <repositories>
     <repository>
-        <id>YOUR-PROJECT-NAME-mvn-repo</id>
-        <url>https://raw.github.com/YOUR-USERNAME/YOUR-PROJECT-NAME/mvn-repo/</url>
+        <id>webjar-app-mvn-repo</id>
+        <url>https://raw.github.com/YOUR-USERNAME/webjar-app/mvn-repo/</url>
         <snapshots>
             <enabled>true</enabled>
             <updatePolicy>always</updatePolicy>
